@@ -15,7 +15,7 @@ const Result = (props) => {
                     <LineChart
                         data={data}
                         withHorizontalLabels={false}
-                        width={width} // from react-native
+                        width={width}
                         height={220}
                         chartConfig={chartConfig}
                         bezier
