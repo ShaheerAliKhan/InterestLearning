@@ -7,6 +7,7 @@ import { LineChart } from "react-native-chart-kit";
 const Result = (props) => {
 
     const { width } = useWindowDimensions()
+
     return (
         <View style={{ flex: 1, backgroundColor: AppColors.backgroundColor }}>
             <SafeAreaView style={{ flex: 1, backgroundColor: AppColors.backgroundColor }}>
@@ -51,9 +52,7 @@ const chartConfig = {
 const data = {
     datasets: [
         {
-            data: [
-                1, 3, 2, 5, 4, 6
-            ],
+            data: [1, 3, 2, 5, 4, 6],
             color: (opacity = 1) => `rgba(255, 255, 255, ${1})`,
             strokeWidth: 5,
         }
